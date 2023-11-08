@@ -1,0 +1,244 @@
+body {
+    display: block;
+}
+
+.wrapper {
+    background-color: #f6f6f9;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper-1024 {
+    max-width: 1024px;
+
+
+}
+
+header {
+    background-color: #6725A8;
+    background-position: center;
+    min-height: 88px;
+    height: inherit;
+    padding: 17px 3px 16px 24px;
+    position: relative;
+    flex: 0 0 auto;
+    color: #fff;
+}
+
+button, input, a {
+    cursor: pointer;
+    text-rendering: auto;
+    letter-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+}
+
+.header_container {
+    max-width: 1024px;
+}
+ 
+.burger {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, .45);
+    background-color: transparent;
+    padding: 5px;
+    margin-right: 16px;
+    border-radius: 8px;
+}
+
+.burger:hover {
+    border: 1px solid rgba(255, 255, 255, .9);
+}
+  
+.btn__hamb {
+    position: relative;
+    display: block;
+    width: 75%;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    margin-left: 4px;
+ }
+
+.btn__hamb div {
+    width: 100%;
+    height: 100%; }
+
+.btn__hamb:before, .btn__hamb:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #fff; 
+    border-radius: 10px;
+    }
+
+.btn__hamb:before {
+      top: -10px; }
+
+.btn__hamb:after {
+      top: 10px; }
+
+
+.logo-link {
+    margin-top: 1px;
+    width: 120px;
+    height: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 21px;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 2.4px;
+    text-align: start;
+}
+
+/* .search {
+    position: relative;
+} */
+
+.catalog {
+    flex-grow: 1;
+    margin: 0 0 0 18px;
+}
+
+.search-box {
+    border-radius: 36px;    
+    background: rgba(255, 255, 255, .2);
+    padding: 12px 46px 12px 19px;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.search-input {
+    font-size: 18px;
+    line-height: 24px;
+    transition: background .3s ease 0s;
+    color: rgba(255, 255, 255, .4);
+    min-width: calc(100% - 24px);
+    background: rgba(255, 255, 255, 0);
+    appearance: none;
+    text-align: left;
+    position: relative;
+    
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, .6);
+    font-size: 18px;
+    line-height: 25px;
+    position: absolute;
+    top: 42%;
+    transform: translate(0, -50%);
+}
+
+.loop {
+    background-image: url('../img/Search.png');
+    background-color: transparent;
+    width: 20.5px;
+    height: 20.5px;
+    opacity: .5;
+    background-repeat: no-repeat;
+    transition: background .3s ease 0s;    
+    position: absolute;
+    right: 3.8%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.nav_bar {
+    min-width: 185px;
+}
+
+
+.item {
+    display: inline-block;    
+    align-items: center;    
+    margin-top: 3px;
+}
+
+.item > a {
+    max-width: 56px; 
+    max-height: 56px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, .9);
+    transition: color .3s ease 0s;
+    display: block;
+
+}
+
+.item__text {
+    width: 19px;
+    height: 27px;
+    position: relative;    
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+
+}
+
+.profile {
+    left: -3px;
+}
+
+.basket {
+    font-size: 12.5px;
+    letter-spacing: 0.23px;
+    right: 3px;
+}
+
+.item__logo-profile {
+    background-image: url('../img/profile.png');
+    background-color: transparent;
+    width: 56px;
+    height: 30px;
+    background-repeat: no-repeat;    
+    transition: background .3s ease 0s;
+    position: relative;
+    margin-left: 29%;
+    top: 1px;
+    
+}
+
+.item__logo-basket {
+    background-image: url('../img/basket.png');
+    background-color: transparent;
+    background-size: 27px;
+    width: 56px;
+    height: 30px;
+    background-repeat: no-repeat;    
+    transition: background .3s ease 0s;
+    position: relative;
+    margin-left: 21%;
+    
+}
+
+.goods_count {
+    height: 16px;
+    min-width: 16px;
+    background-color: #F55123;
+    border-radius: 16px;
+    padding: 2px, 2px, 2px, 2px; 
+    display: inline-block;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    position: relative; 
+    top: -12px;
+    right: -1px;
+}

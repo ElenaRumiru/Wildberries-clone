@@ -1,0 +1,265 @@
+@media (max-width : 1199px)
+{
+    .search-box {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width : 1024px)
+{
+    .search-box {
+        width: 100%;
+        max-width: 594px;
+    }
+}
+
+
+
+
+/*@media (max-width: 1199px)
+{
+	.container
+	{
+		width: 100%;
+	}
+
+	.what .s_title
+	{
+		font-size: 32px;
+	}
+}
+
+@media (max-width:  1023px)
+{
+	.container
+	{
+		width: 768px;
+	}
+
+	.s_title
+	{
+		font-size: 40px;
+	}
+
+	.sb_title
+	{
+		font-size: 18px;
+	}
+
+	.header_bottom .container
+	{
+		flex-direction: column;
+	}
+
+	.banner 
+	{
+		min-height: 300px;
+	}
+
+	.steps article
+	{
+		width: 50%;
+	}
+
+	.what .container
+	{
+		flex-direction: column;
+	}
+
+	.what .s_title
+	{
+		text-align: center;
+	}
+
+	.about 
+	{
+		padding-bottom: 50px;
+	}
+
+	.about_l,
+	.about_r
+	{
+		width: 100%;
+	}
+
+	.about_r
+	{
+		padding: 0;
+		margin-top: 30px;
+	}
+
+	.order
+	{
+		height: auto;
+	}
+
+	.order form,
+	.order img
+	{
+		position: static;
+		max-width: 100%;
+
+	}
+
+	.order form
+	{
+		width: 80%;
+	}
+
+	.order .container 
+	{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+}
+
+@media (max-width: 767px)
+{
+	.container
+	{
+		width: 568px;
+	}
+
+	.mob_menu
+	{
+		display: block;
+	}
+
+	.nav_menu
+	{
+		position: absolute;
+		top: 60px;
+		left:  0;
+		right: 0;
+		margin: auto;
+		width: 90%;
+		background: #444;
+		height: auto;
+		flex-direction: column;
+		box-shadow: 0 2px 8px rgba(0,0,0, .3);
+		border-radius: 0 0 5px 5px;
+		z-index: 99;
+		display: none;
+	}
+
+	.nav_menu li
+	{
+		margin: 0;
+		padding: 10px 15px;
+		text-align: center;
+	}
+
+	.drop_menu
+	{
+		width: 100%;
+	}
+
+	p,a,label,span
+	{
+		font-size: 12px;
+	}
+
+	.header_contacts article
+	{
+		margin: 0 10px;
+	}
+
+	.header_contacts i
+	{
+		font-size: 20px;
+	}
+}
+
+@media (max-width:  567px)
+{
+
+	.btn
+	{
+		padding: 10px 20px;
+		font-size: 12px;
+	}
+
+	.s_title
+	{
+		font-size: 28px;
+	}
+
+
+	.container
+	{
+		width: 320px;
+	}
+
+	.header_top .container 
+	{
+		flex-direction: column;
+	}
+
+	.header_top span
+	{
+		text-align: center;
+	}
+
+	.header_social i
+	{
+		margin: 0 5px;
+	}
+
+	.header_contacts
+	{
+		flex-direction: column;
+	}
+
+	.header_contacts article
+	{
+		margin: 5px 0;
+	}
+
+	.banner
+	{
+		min-height: 200px;
+	}
+
+	.steps article
+	{
+		width: 100%;
+	}
+
+
+	.about_tabs button
+	{
+		width: 33.3%;
+		height: 40px;
+		font-size: 12px;
+		border: 1px solid #ddd;
+		background: #fff;
+		cursor: pointer;
+	}
+
+	.tabs_body img,
+	.tabs_text
+	{
+		width: 100%;
+		padding: 0;
+		margin-bottom: 10px;
+	}
+
+	.order form
+	{
+		width: 100%;
+	}
+
+	.form_col
+	{
+		width: 100%;
+	}
+
+	.order img
+	{
+		width: 100%;
+		height: auto;
+	}
+
+} */

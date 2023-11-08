@@ -1,0 +1,65 @@
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-Light.eot');
+	src: local('Segoe UI Light'), local('SegoeUI-Light'),
+		url('../fonts/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-Light.woff') format('woff'),
+		url('../fonts/SegoeUI-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-BoldItalic.eot');
+	src: local('Segoe UI Bold Italic'), local('SegoeUI-BoldItalic'),
+		url('../fonts/SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-BoldItalic.woff') format('woff'),
+		url('../fonts/SegoeUI-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-SemiBold.eot');
+	src: local('Segoe UI Semibold'), local('SegoeUI-SemiBold'),
+		url('../fonts/SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-SemiBold.woff') format('woff'),
+		url('../fonts/SegoeUI-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI.eot');
+	src: local('Segoe UI'), local('SegoeUI'),
+		url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI.woff') format('woff'),
+		url('../fonts/SegoeUI.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-Bold.eot');
+	src: local('Segoe UI Bold'), local('SegoeUI-Bold'),
+		url('../fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-Bold.woff') format('woff'),
+		url('../fonts/SegoeUI-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-Italic.eot');
+	src: local('Segoe UI Italic'), local('SegoeUI-Italic'),
+		url('../fonts/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-Italic.woff') format('woff'),
+		url('../fonts/SegoeUI-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
