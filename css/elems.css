@@ -10,33 +10,31 @@ body {
 
 .wrapper-1024 {
     max-width: 1024px;
-
-
 }
 
 header {
     background-color: #6725A8;
     background-position: center;
     min-height: 88px;
+    height: 88px;
+    max-width: 1504px; 
     height: inherit;
-    padding: 17px 3px 16px 24px;
+    padding: 17px 3px 40px 24px;
     position: relative;
     flex: 0 0 auto;
     color: #fff;
 }
 
-button, input, a {
-    cursor: pointer;
-    text-rendering: auto;
-    letter-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    text-align: center;
-}
-
-.header_container {
-    max-width: 1024px;
+.header::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 24px;
+    border-radius: 24px 24px 0 0;
+    background: #f6f6f9;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
 }
  
 .burger {
@@ -82,11 +80,12 @@ button, input, a {
     }
 
 .btn__hamb:before {
-      top: -10px; }
+      top: -10px; 
+    }
 
 .btn__hamb:after {
-      top: 10px; }
-
+      top: 10px; 
+    }
 
 .logo-link {
     margin-top: 1px;
@@ -101,10 +100,6 @@ button, input, a {
     letter-spacing: 2.4px;
     text-align: start;
 }
-
-/* .search {
-    position: relative;
-} */
 
 .catalog {
     flex-grow: 1;
@@ -129,8 +124,7 @@ button, input, a {
     background: rgba(255, 255, 255, 0);
     appearance: none;
     text-align: left;
-    position: relative;
-    
+    position: relative;    
 }
 
 ::placeholder {
@@ -160,7 +154,6 @@ button, input, a {
     min-width: 185px;
 }
 
-
 .item {
     display: inline-block;    
     align-items: center;    
@@ -187,7 +180,6 @@ button, input, a {
     font-weight: 400;
     font-style: normal;
     position: relative;
-
 }
 
 .profile {
@@ -209,8 +201,7 @@ button, input, a {
     transition: background .3s ease 0s;
     position: relative;
     margin-left: 29%;
-    top: 1px;
-    
+    top: 1px;    
 }
 
 .item__logo-basket {
@@ -222,8 +213,7 @@ button, input, a {
     background-repeat: no-repeat;    
     transition: background .3s ease 0s;
     position: relative;
-    margin-left: 21%;
-    
+    margin-left: 21%;    
 }
 
 .goods_count {
@@ -241,4 +231,67 @@ button, input, a {
     position: relative; 
     top: -12px;
     right: -1px;
+}
+
+
+main {
+    flex: 1 0 auto;
+    position: relative;
+    padding-top: 1px;
+    display: block;
+}
+
+.main__container, .footer__container {
+    padding: 0 23px;
+    max-width: 1504px;
+    margin: 0 auto;
+}
+
+.basket-page {    
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.basket-page__content {
+}
+
+.basket-page__section {
+    padding: 10px 0;
+    border: 1px solid transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+
+.basket_header {
+    position: relative;       
+}
+
+.basket_header > h1 {
+    font-size: 28px;
+	line-height: 36px;
+    padding-bottom: 6px;
+    letter-spacing: -0.2px;
+
+}
+
+.basket_list__header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordeon-content {
+    
+    padding-top: 8px;
+}
+
+
+.basket-page__sidebar {
+    width: 340px;
+    min-width: 360px;
+    position: relative;
+    flex-shrink: 0;
 }

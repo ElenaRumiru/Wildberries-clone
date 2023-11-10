@@ -4,6 +4,11 @@
         width: 100%;
         max-width: 100%;
     }
+
+	.basket-page__content {
+    width: calc(100% - 340px - 20px);
+    margin-right: 20px;
+	}
 }
 
 @media (max-width : 1024px)
@@ -12,8 +17,40 @@
         width: 100%;
         max-width: 594px;
     }
+
+	
+
+	.basket-page__sidebar {
+		margin-top: 24px;
+	}
+	
+	
 }
 
+@media (min-width: 1024px) {
+	.basket-page .basket-section {
+    	padding: 24px;
+    	border-radius: 20px;
+	}
+
+	.basket_header {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 20px;
+	}
+
+	.basket-page__content {
+		width: calc(100% - 313px - 24px);
+		margin-right: 40px;
+	}
+	.basket-page__sidebar {
+		width: 310px;
+		min-width: 360px;
+		position: relative;
+		flex-shrink: 0;
+		margin-top: 0;
+	}
+}
 
 
 

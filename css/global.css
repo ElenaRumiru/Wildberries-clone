@@ -1,0 +1,121 @@
+input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+button, input {
+    border: none;
+}
+
+button, input, a {
+    cursor: pointer;
+    text-rendering: auto;
+    letter-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+}
+
+/* Чекбоксы в стиле Wildberries */
+.checkbox.style-c {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+}
+.checkbox.style-c input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox.style-c input:checked ~ .checkbox__checkmark {
+    background-color: #CB11AB;
+}
+.checkbox.style-c input:checked ~ .checkbox__checkmark:after {
+    opacity: 1;
+}
+.checkbox.style-c:hover input ~ .checkbox__checkmark {
+    background-color: #eee;
+}
+.checkbox.style-c:hover input:checked ~ .checkbox__checkmark {
+    background-color: #CB11AB;
+}
+.checkbox.style-c .checkbox__checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 21.5px;
+    width: 21.5px;
+    background-color: #eee;
+    transition: background-color 0.25s ease;
+    border-radius: 5px;
+}
+.checkbox.style-c .checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    left: 7.5px;
+    top: 3.1px;
+    width: 4.5px;
+    height: 9.5px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(39deg);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+.checkbox.style-c .checkbox__body {
+    color: #000;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    padding-left: 3px;
+    top: -2px;
+}
+
+
+/* Аккордеон стилизация */
+.accordeon-checkbox {
+    display: none;
+    appearance: none;
+}
+
+.accordeon-checkbox ~ label {
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(188, 187, 187, 0.45);
+}
+
+.accordeon-checkbox ~ label .arrow {
+    background-image: url(../img/accordion.png);
+    /* background-color: transparent; */
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: 1s;
+    height: 20px;
+    width: 20px;
+    transform: rotate(180deg);
+    position: relative;
+    top: 2px;
+    right: -0.5px;
+}
+
+.accordeon-checkbox:checked ~ label .arrow {
+    transform: rotate(360deg);
+}
+
+.accordeon-checkbox ~ .accordeon-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+.accordeon-checkbox:checked ~ .accordeon-content {
+    max-height: 100vh;
+}
