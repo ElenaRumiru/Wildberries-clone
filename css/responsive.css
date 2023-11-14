@@ -1,30 +1,24 @@
-@media (max-width : 1199px)
+/* @media (max-width : 1199px)
 {
     .search-box {
         width: 100%;
         max-width: 100%;
     }
 
-	.basket-page__content {
-    width: calc(100% - 340px - 20px);
-    margin-right: 20px;
+	.basket-page {
+    	width: calc(100% - 340px - 20px);
+    	margin-right: 20px;
 	}
-}
+} */
 
-@media (max-width : 1024px)
-{
+@media (max-width : 1024px) {
     .search-box {
         width: 100%;
         max-width: 594px;
     }
-
-	
-
 	.basket-page__sidebar {
 		margin-top: 24px;
-	}
-	
-	
+	}	
 }
 
 @media (min-width: 1024px) {
@@ -32,23 +26,44 @@
     	padding: 24px;
     	border-radius: 20px;
 	}
-
 	.basket_header {
 		font-size: 24px;
 		line-height: 32px;
 		margin-bottom: 20px;
 	}
-
-	.basket-page__content {
-		width: calc(100% - 313px - 24px);
-		margin-right: 40px;
+	.basket-page {
+		width: calc(100% - 304px - 24px);
 	}
 	.basket-page__sidebar {
-		width: 310px;
-		min-width: 360px;
+		max-width: 304px;
+		min-width: 304px;
 		position: relative;
 		flex-shrink: 0;
 		margin-top: 0;
+		margin-left: 18px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.basket-page .basket-section {
+    	padding: 24px;
+    	border-radius: 20px;
+	}
+	.basket_header {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 20px;
+	}
+	.basket-page {
+		width: calc(100% - 429px - 24px);
+	}
+	.basket-page__sidebar {
+		max-width: 429px;
+		min-width: 304px;
+		position: relative;
+		flex-shrink: 0;
+		margin-top: 0;		
+		margin-left: 18px;
 	}
 }
 
