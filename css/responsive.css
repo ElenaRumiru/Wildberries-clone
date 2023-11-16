@@ -32,7 +32,7 @@
 		margin-bottom: 20px;
 	}
 	.basket-page {
-		width: calc(100% - 304px - 24px);
+		width: calc(100% - 304px - 33px);
 	}
 	.basket-page__sidebar {
 		max-width: 304px;
@@ -40,7 +40,7 @@
 		position: relative;
 		flex-shrink: 0;
 		margin-top: 0;
-		margin-left: 18px;
+		margin-left: 33px;
 	}
 }
 
@@ -55,7 +55,7 @@
 		margin-bottom: 20px;
 	}
 	.basket-page {
-		width: calc(100% - 429px - 24px);
+		width: calc(100% - 429px - 33px);
 	}
 	.basket-page__sidebar {
 		max-width: 429px;
@@ -63,7 +63,7 @@
 		position: relative;
 		flex-shrink: 0;
 		margin-top: 0;		
-		margin-left: 18px;
+		margin-left: 33px;
 	}
 }
 

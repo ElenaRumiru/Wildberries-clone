@@ -18,11 +18,18 @@ button, input, a {
     text-align: center;
 }
 
+h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
 /* Чекбоксы в стиле Wildberries */
 .checkbox.style-c {
     display: inline-block;
     position: relative;
-    padding-left: 30px;
+    padding-left: 22px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -57,6 +64,7 @@ button, input, a {
     background-color: #eee;
     transition: background-color 0.25s ease;
     border-radius: 5px;
+    
 }
 .checkbox.style-c .checkbox__checkmark:after {
     content: "";
@@ -71,18 +79,20 @@ button, input, a {
     opacity: 0;
     transition: opacity 0.25s ease;
 }
+
+
 .checkbox.style-c .checkbox__body {
     color: #000;
     line-height: 24px;
     font-size: 16px;
     font-weight: 400;
     position: relative;
-    padding-left: 3px;
+    right: -11px;
     top: -2px;
 }
 
 
-/* Аккордеон стилизация */
+/* Аккордеон 1 стилизация */
 .accordeon-checkbox {
     display: none;
     appearance: none;
@@ -119,6 +129,47 @@ button, input, a {
 .accordeon-checkbox:checked ~ .accordeon-content {
     max-height: 100vh;
 }
+
+
+
+/* Аккордеон 2 стилизация */
+.accordeon2-checkbox {
+    display: none;
+    appearance: none;
+}
+
+.accordeon2-checkbox ~ label {
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(188, 187, 187, 0.45);
+}
+
+.accordeon2-checkbox ~ label .arrow2 {
+    background-image: url(../img/accordion.png);
+    /* background-color: transparent; */
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: 1s;
+    height: 20px;
+    width: 20px;
+    transform: rotate(180deg);
+    position: relative;
+    top: 4px;
+    right: -0.5px;
+}
+
+.accordeon2-checkbox:checked ~ label .arrow2 {
+    transform: rotate(360deg);
+}
+
+.accordeon2-checkbox ~ .accordeon2-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+.accordeon2-checkbox:checked ~ .accordeon2-content {
+    max-height: 100vh;
+}
+
 
 
 /* Всплывающая подсказка (недоделано, нужно снизу) */
