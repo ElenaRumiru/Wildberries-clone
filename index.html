@@ -580,123 +580,146 @@
                 <div class="reg-payment-header">
                   <h2 class="rd-mh">Получатель</h2>
                 </div>
-                <div class="reg_form reg_form1 fx fx_sb">
-                  <!-- <form action="#" class="forms"> -->
-                  <input type="text" name="name" class="input-w" placeholder="Имя" required />
-                  <input type="text" name="surename" class="input-w" placeholder="Фамилия" required />
-                </div>
-                <div class="reg_form reg_form2 fx fx_sb">
-                  <input type="text" name="email" class="input-b" placeholder="Почта" required />
-                  <input type="tel" name="phone" class="input-b" placeholder="Телефон"
-                    pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" 
-                    value="+7 988 123-45-67"/>
-                  <input type="text" name="inn" class="input-b" placeholder="ИНН" />
-                  <!-- </form> -->
-                </div>
+                
+                <form action="#" class="forms">
+                  <div class="reg_form reg_form1 fx fx_sb">
+                    <div class="name-container reg_form3">
+                      <input type="text" id="name-input" name="name" class="input-w" placeholder="Имя" required />
+                      <label for="name-input"></label>
+                    </div>
+                    <div class="surename-container reg_form3">
+                      <input type="text" id="surename-input" name="surename" class="input-w" placeholder="Фамилия" required />
+                      <label for="surename-input"></label>
+                    </div>             
+                  </div>
+                  <div class="reg_form reg_form2 fx fx_sb">
+                    <div class="email-container reg_form3">
+                      <input type="text" id="email-input" name="email" class="input-b" placeholder="Почта" required />
+                      <label for="email-input"></label>
+                    </div>
+                    <div class="tel-container reg_form3">
+                      <label for="tel-input" class="over-label">Телефон</label>
+                      <input type="tel" id="tel-input" name="phone" class="input-b" placeholder="Телефон"
+                      pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18"
+                      value="+7 988 123-45-67" />
+                      <label for="tel-input"></label>
+                    </div>
+                    <div class="inn-container reg_form3">
+                      <input type="text" id="inn-input" name="inn" class="input-b" placeholder="ИНН" />
+                      <label for="inn-input">Для таможенного оформления</label>
+                    </div>
+                    
+                    
+                  </div>
+                </form>
               </div>
 
 
-          </div>
-        </div>
-      </div>
-
-
-      <div class="basket-page__sidebar">
-        <div class="sidebar">
-          <div class="sidebar-o fx">
-
-            <div class="sidebar-o__price">
-              <div class="sidebar-o__price-head fx fx_sb">
-                <h2 class="sidebar-o__price-h1">Итого</h2>
-                <h2 class="sidebar-o__price-h2 all">2 101 063 <span class="h22">сом</span></h2>
-              </div>
-              <div class="sidebar-o__price-lines">
-                <div class="sidebar-o__price-line1 fx fx_sb">
-                  <div class="sidebar-o__price-line1-l">
-                    <span class="total-count">203</span>
-                    <span>товара</span>
-                  </div>
-                  <div class="sidebar-o__price-line1-r">
-                    <span class="total-price">2 302 048</span>
-                    <span>сом</span>
-                  </div>
-                </div>
-                <div class="sidebar-o__price-line2 fx fx_sb">
-                  <div class="sidebar-o__price-line1-l">
-                    <span>Скидка</span>
-                  </div>
-                  <div class="sidebar-o__price-line1-r">
-                    <span class="total-price">−200 985</span>
-                    <span>сом</span>
-                  </div>
-                </div>
-                <div class="sidebar-o__price-line3 fx fx_sb">
-                  <div class="sidebar-o__price-line1-l">
-                    <span>Доставка</span>
-                  </div>
-                  <div class="sidebar-o__price-line1-r">
-                    <span>Бесплатно</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="sidebar-o__delivery">
-              <div class="sidebar-o__delivery-adress">
-                <div class="sidebar-o__delivery-head fx fx_sb">
-                  <h3 class="sidebar-o__delivery-h3">
-                    Доставка в пункт выдачи
-                  </h3>
-                  <span class="pen"></span>
-                </div>
-                <p class="adress">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
-                <span class="when-delivery">5–8 фев</span>
-              </div>
-              <div class="sidebar-o__delivery-frame">
-                <span class="delivery-icon"></span>
-                <span class="delivery-frame-text">Обратная доставка товаров на склад при отказе —
-                  <span class="green">бесплатно</span></span>
-              </div>
-            </div>
-            <div class="sidebar-o__payment">
-              <div class="sidebar-o__payment-bycard">
-                <div class="sidebar-o__payment-bycard__head fx fx_sb">
-                  <h3 class="sidebar-o__payment-bycard__h3">Оплата картой</h3>
-                  <span class="pen"></span>
-                </div>
-                <div class="sidebar-o__payment-bycard_number fx fx_m">
-                  <span class="card-icon"></span>
-                  <span class="card-number">1234 12·· ···· 1234</span>
-                </div>
-              </div>
-              <div class="sidebar-o__payment-when">
-                <label class="checkbox style-c">
-                  <input type="checkbox" />
-                  <div class="checkbox__checkmark"></div>
-                  <div class="checkbox__body">
-                    <p class="new-checkbox-body">Списать оплату сразу</p>
-                  </div>
-                </label>
-                <p>Спишем оплату с карты при получении</p>
-              </div>
-            </div>
-          </div>
-          <div class="sidebar-o__btn-box">
-            <button type="button" class="btn-order">
-              Заказать
-            </button>
-            <div class="rules fx">
-              <div class="agree-icon"></div>
-              <div class="body-agree">
-                <p>Соглашаюсь с правилами пользования торговой площадкой и возврата</p>
-              </div>
             </div>
           </div>
         </div>
+
+
+        <div class="basket-page__sidebar">
+          <div class="sidebar">
+            <div class="sidebar-o fx">
+
+              <div class="sidebar-o__price">
+                <div class="sidebar-o__price-head fx fx_sb">
+                  <h2 class="sidebar-o__price-h1">Итого</h2>
+                  <h2 class="sidebar-o__price-h2 all">2 101 063 <span class="h22">сом</span></h2>
+                </div>
+                <div class="sidebar-o__price-lines">
+                  <div class="sidebar-o__price-line1 fx fx_sb">
+                    <div class="sidebar-o__price-line1-l">
+                      <span class="total-count">203</span>
+                      <span>товара</span>
+                    </div>
+                    <div class="sidebar-o__price-line1-r">
+                      <span class="total-price">2 302 048</span>
+                      <span>сом</span>
+                    </div>
+                  </div>
+                  <div class="sidebar-o__price-line2 fx fx_sb">
+                    <div class="sidebar-o__price-line1-l">
+                      <span>Скидка</span>
+                    </div>
+                    <div class="sidebar-o__price-line1-r">
+                      <span class="total-price">−200 985</span>
+                      <span>сом</span>
+                    </div>
+                  </div>
+                  <div class="sidebar-o__price-line3 fx fx_sb">
+                    <div class="sidebar-o__price-line1-l">
+                      <span>Доставка</span>
+                    </div>
+                    <div class="sidebar-o__price-line1-r">
+                      <span>Бесплатно</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="sidebar-o__delivery">
+                <div class="sidebar-o__delivery-adress">
+                  <div class="sidebar-o__delivery-head fx fx_sb">
+                    <h3 class="sidebar-o__delivery-h3">
+                      Доставка в пункт выдачи
+                    </h3>
+                    <span class="pen"></span>
+                  </div>
+                  <p class="adress">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                  <span class="when-delivery">5–8 фев</span>
+                </div>
+                <div class="sidebar-o__delivery-frame">
+                  <span class="delivery-icon"></span>
+                  <span class="delivery-frame-text">Обратная доставка товаров на склад при отказе —
+                    <span class="green">бесплатно</span></span>
+                </div>
+              </div>
+              <div class="sidebar-o__payment">
+                <div class="sidebar-o__payment-bycard">
+                  <div class="sidebar-o__payment-bycard__head fx fx_sb">
+                    <h3 class="sidebar-o__payment-bycard__h3">Оплата картой</h3>
+                    <span class="pen"></span>
+                  </div>
+                  <div class="sidebar-o__payment-bycard_number fx fx_m">
+                    <span class="card-icon"></span>
+                    <span class="card-number">1234 56•• •••• 1234</span>
+                  </div>
+                </div>
+                <div class="sidebar-o__payment-when">
+                  <label class="checkbox style-c">
+                    <input type="checkbox" />
+                    <div class="checkbox__checkmark"></div>
+                    <div class="checkbox__body">
+                      <p class="new-checkbox-body">Списать оплату сразу</p>
+                    </div>
+                  </label>
+                  <p>Спишем оплату с карты при получении</p>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-o__btn-box">
+              <button type="button" class="btn-order">
+                Заказать
+              </button>
+              <div class="rules fx">
+                <div class="agree-icon"></div>
+                <div class="body-agree">
+                  <p>Соглашаюсь с правилами пользования торговой площадкой и возврата</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-  </div>
-  </main>
+    </main>
+    <footer>
+      <div class="footer-container fx fx_c">
+        <span class="footer-text">© 2022  &nbsp;ООО «Товары и точка»</span>
+      </div>
+    </footer>
   </div>
 </body>
 
