@@ -68,6 +68,30 @@
 }
 
 
+@media (min-width: 1400px) {
+
+	.loop {		   
+		position: absolute;
+		right: 2.4%;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+	
+	.input-w {
+		min-width: 338px;
+		text-align: start;
+	}
+	
+	.input-b {
+		min-width: 218px;  
+		text-align: start;
+	}
+
+
+}
+
+
+
 
 /*@media (max-width: 1199px)
 {
