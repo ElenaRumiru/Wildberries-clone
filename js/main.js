@@ -1,26 +1,18 @@
-// Функция счетчик количества товаров
 
-const counterMinus = document.querySelector('.counter-minus');
-const counterPlus = document.querySelector('.counter-plus');
-let countGoods = document.querySelector('.counter-count');
-let countLeft = document.querySelector('.count-left');
+function addHandlers(count) {
+    let counterMinus = count.querySelector('.counter-minus');
+    let counterPlus = count.querySelector('.counter-plus');
+    let countGoods = count.querySelector('.counter-count');
+    counterPlus.addEventListener("click", function() {
+        countGoods.innerText++;
+    });
+    counterMinus.addEventListener("click", function() {
+        if (countGoods.innerText >= 2) {
+        countGoods.innerText--;
+        }
+    });
+  }
+  
+  let countsBlock = document.querySelectorAll(".item-count__counter");
+  countsBlock.forEach(addHandlers);
 
-
-const plus = () => {
-    let countGoodsNumber = Number(countGoods.innerHTML);
-    let countGoodsLeft = Number(countLeft.innerHTML);
-    countGoodsNumber++;
-    countGoods.innerHTML = countGoodsNumber;
-}
-
-const minus = () => {
-    let countGoodsNumber = Number(countGoods.innerHTML);
-    if (countGoodsNumber >= 2) {
-        countGoodsNumber--;
-        countGoods.innerHTML = countGoodsNumber;
-    }
-
-}
-
-counterPlus.addEventListener('click', plus);
-counterMinus.addEventListener('click', minus);
