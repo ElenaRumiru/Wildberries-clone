@@ -25,6 +25,14 @@ h3 {
     margin-bottom: 5px;
 }
 
+.hidden {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    display: none;
+}
+
 /* Чекбоксы в стиле Wildberries */
 .checkbox.style-c {
     display: inline-block;
@@ -127,7 +135,7 @@ h3 {
     transition: 1s;
 }
 .accordeon-checkbox:checked ~ .accordeon-content {
-    max-height: 100vh;
+    max-height: inherit;
 }
 
 
@@ -167,7 +175,7 @@ h3 {
     transition: 1s;
 }
 .accordeon2-checkbox:checked ~ .accordeon2-content {
-    max-height: 100vh;
+    max-height: inherit;
 }
 
 
