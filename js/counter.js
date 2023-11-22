@@ -5,6 +5,8 @@ const totalDiscount = document.querySelector('.total-discount');
 const goodCount = document.querySelectorAll('.number-input');
 
 
+
+
 //Пишем функцию обработчик по клику в каждом товаре
 function addHandlers(count) {
     let itemPriceBlock = count.querySelector('.item-price');
@@ -101,7 +103,27 @@ function addHandlers(count) {
 	
 }
   // Находим все товары
-  let countsBlock = document.querySelectorAll(".good");
+let countsBlock = document.querySelectorAll(".good");
   //Для каждого товара вызываем функцию обработчик кликов
-  countsBlock.forEach(addHandlers);
+countsBlock.forEach(addHandlers);
+
+
+// Добавляем корректную работу "Выбрать все"
+const chooseAllGoods = document.querySelector('.checkboxesAll');
+
+chooseAllGoods.addEventListener("click", function() {
+	const basketPage = document.querySelector('.basket-page');
+ 	let items = basketPage.querySelectorAll('.checkboxes');
+	let len = items.length;
+  	for (let i = 0; i < len; i += 1) {
+		if (items.item(i).type && items.item(i).type === "checkbox") {       
+		if (chooseAllGoods.checked) {
+		items.item(i).checked = true;
+		} else {
+		items.item(i).checked = false;
+		}       
+  }
+}
+})
+
 

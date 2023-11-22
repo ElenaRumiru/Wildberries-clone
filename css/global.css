@@ -199,11 +199,17 @@ h3 {
     position: relative;
     display: inline-block;
   }
+
+.tooltip__toggle-without {
+    background-image: none;
+    height: inherit;
+    width: 60px;
+}
   
   /* Текст подсказки */
 .tooltip__text {
     visibility: hidden;
-    width: 280px;
+    width: 400px;
     background-color: #fff;
     color: #000;
     text-align: left;
@@ -212,13 +218,14 @@ h3 {
     font-size: 13px;
     font-weight: 400;
     line-height: 16px;
+    box-shadow: 0px 2px 10px 0px #00000026;
   
     /* Расположите текст подсказки */
     position: absolute;
-    z-index: 3;
-    top: 50%;
+    z-index: 999;
+    top: 100%;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -80px;
   
     /* Исчезают в подсказке */
     opacity: 0;
@@ -229,7 +236,16 @@ h3 {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
+
+.tooltip__text > h2 {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.tooltip:hover {
+    cursor: pointer;
+}
    
   /* Отображение текста подсказки при наведении курсора мыши на контейнер подсказки */
   .tooltip:hover > .tooltip__text, 

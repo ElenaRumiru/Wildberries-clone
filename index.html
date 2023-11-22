@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <div class="wrapper">
 
     <header class="header">
@@ -71,7 +72,7 @@
                     <span>
                       <div class="basket_list__header">
                         <label class="checkbox style-c">
-                          <input type="checkbox" checked />
+                          <input type="checkbox" class="checkboxes checkboxesAll" checked />
                           <div class="checkbox__checkmark"></div>
                           <div class="checkbox__body checkbox__body2">Выбрать все</div>
                         </label>
@@ -87,7 +88,7 @@
                         <div class="item-good fx">
                           <div class="item-checkbox tall-checkbox fx fx_c">
                             <label class="checkbox style-c">
-                              <input type="checkbox" checked />
+                              <input type="checkbox" class="checkboxes" checked />
                               <div class="checkbox__checkmark"></div>
                               <div class="checkbox__body"></div>
                             </label>
@@ -178,7 +179,7 @@
                         <div class="item-good fx">
                           <div class="item-checkbox tall-checkbox fx fx_c">
                             <label class="checkbox style-c">
-                              <input type="checkbox" checked />
+                              <input type="checkbox" class="checkboxes" checked />
                               <div class="checkbox__checkmark"></div>
                               <div class="checkbox__body"></div>
                             </label>
@@ -268,7 +269,7 @@
                         <div class="item-good fx">
                           <div class="item-checkbox tall-checkbox fx fx_c">
                             <label class="checkbox style-c">
-                              <input type="checkbox" checked />
+                              <input type="checkbox" class="checkboxes" checked />
                               <div class="checkbox__checkmark"></div>
                               <div class="checkbox__body"></div>
                             </label>
@@ -696,7 +697,16 @@
                 <div class="sidebar-o__delivery-frame">
                   <span class="delivery-icon"></span>
                   <span class="delivery-frame-text">Обратная доставка товаров на склад при отказе —
-                    <span class="green">бесплатно</span></span>
+                    <span class="tooltip tooltip_none">
+                      <span class="tooltip__toggle tooltip__toggle-without green">
+                        бесплатно
+                      </span>
+                      <span class="tooltip__text">
+                        <p>Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно
+                        </p>
+                      </span>
+                    </span>              
+                  </span>
                 </div>
               </div>
               <div class="sidebar-o__payment">
@@ -743,6 +753,8 @@
       </div>
     </footer>
   </div>
+
+  
 </body>
 
 </html>
