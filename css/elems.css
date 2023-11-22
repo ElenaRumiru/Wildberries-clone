@@ -395,6 +395,11 @@ main {
 
 .favourite {
     padding-right: 18px;
+    background-color: transparent;
+}
+
+.delete {    
+    background-color: transparent;
 }
 
 .item-price__inbasket {
@@ -661,6 +666,7 @@ main {
 
 
 
+
 /* Получатель */
 .reg2 {
     background-color: #fff;
@@ -924,3 +930,72 @@ footer::before {
     display: block;
 }
 
+
+
+.number {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    
+  }
+  .number input[type="number"] {
+    display: block;
+    height: 44px;
+    line-height: 24px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;      
+    border: none;
+    border-radius: 8px;
+  }
+  .number input[type="number"]::-webkit-outer-spin-button,
+  .number input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  .number-minus {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    width: 24px;
+    padding: 0;
+    display: block;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;      
+    background-color: #fff;      
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-left: 5px;
+  }
+  .number-plus {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    width: 24px;
+    padding: 0;
+    display: block;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;      
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;      
+    padding-right: 5px;
+  }
+
+  .gray_color {
+    color: #9797AF;
+}

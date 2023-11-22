@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <script src="js/main.js" type="module" defer></script>
+  <script src="js/counter.js" type="module" defer></script>
   <title>Wildberries - модный интернет магазин</title>
 </head>
 
@@ -137,21 +137,21 @@
                       <div class="basket-item__rigth-cont fx fx_sb">
 
                         <div class="item-count">
-                          <div class="item-count__counter fx fx_m fx_c">
-                            <button class="counter-minus">−</button>
-                            <span class="counter-count center">1</span>
-                            <button class="counter-plus">+</button>
+                          <div class="number">
+                            <button class="number-minus gray_color" type="button">−</button>
+                            <input class="number-input" type="number" min="1" max="3" value="1" readonly>
+                            <button class="number-plus" type="button">+</button>
                           </div>
 
-                          <p class="counter-left">Осталось <span class="count-left">2</span>
+                          <p class="counter-left">Осталось <span class="left">2</span>
                              шт.</p>
                           <div class="counter-icons fx fx_e">
-                            <span class="favourite">
+                            <button class="favourite">
                               <img src="./img/heart_black.svg" alt="">
-                            </span>
-                            <span class="delete">
+                            </button>
+                            <button class="delete">
                               <img src="./img/basket_black.svg" alt="">
-                            </span>
+                            </button>
                           </div>
 
                         </div>
@@ -229,10 +229,10 @@
                       <div class="basket-item__rigth-cont fx fx_sb">
 
                         <div class="item-count">
-                          <div class="item-count__counter fx fx_m fx_c">
-                            <button class="counter-minus">−</button>
-                            <span class="counter-count center">200</span>
-                            <button class="counter-plus">+</button>
+                          <div class="number">
+                            <button class="number-minus" type="button">−</button>
+                            <input class="number-input" type="number" min="1" value="200" readonly>
+                            <button class="number-plus" type="button">+</button>
                           </div>
 
                           <!-- <p class="counter-left"></p> -->
@@ -314,13 +314,13 @@
                       <div class="basket-item__rigth-cont fx fx_sb">
 
                         <div class="item-count">
-                          <div class="item-count__counter fx fx_m fx_c">
-                            <button class="counter-minus">−</button>
-                            <span class="counter-count center">2</span>
-                            <button class="counter-plus">+</button>
+                          <div class="number">
+                            <button class="number-minus" type="button">−</button>
+                            <input class="number-input" type="number" min="1" max="4" value="2" readonly>
+                            <button class="number-plus" type="button">+</button>
                           </div>
 
-                          <p class="counter-left">Осталось 2 шт</p>
+                          <p class="counter-left">Осталось <span class="left">2</span> шт</p>
                           <div class="counter-icons fx fx_e">
                             <span class="favourite">
                               <img src="./img/heart_black.svg" alt="">
@@ -645,16 +645,19 @@
               <div class="sidebar-o__price">
                 <div class="sidebar-o__price-head fx fx_sb">
                   <h2 class="sidebar-o__price-h1">Итого</h2>
-                  <h2 class="sidebar-o__price-h2 all"><span class="total-price">2 101 063</span><span class="h22">&nbsp;сом</span></h2>
+                  <h2 class="sidebar-o__price-h2 all">
+                    <span class="total-price" data-baskettotalprice="2101063">2 101 063</span>
+                    <span class="h22">&nbsp;сом</span>
+                  </h2>
                 </div>
                 <div class="sidebar-o__price-lines">
                   <div class="sidebar-o__price-line1 fx fx_sb">
                     <div class="sidebar-o__price-line1-l">
-                      <span class="total-count">203</span>
+                      <span class="total-count" data-baskettotalcount="203">203</span>
                       <span>товара</span>
                     </div>
                     <div class="sidebar-o__price-line1-r">
-                      <span class="total-old-price">2 302 048</span>
+                      <span class="total-old-price" data-baskettotalpriceold="2302048">2 302 048</span>
                       <span>сом</span>
                     </div>
                   </div>
@@ -663,7 +666,8 @@
                       <span>Скидка</span>
                     </div>
                     <div class="sidebar-o__price-line1-r">
-                      <span class="total-discount">−200 985</span>
+                      <span>−</span>
+                      <span class="total-discount" data-basketdiscount="200985">200 985</span>
                       <span>сом</span>
                     </div>
                   </div>
