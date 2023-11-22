@@ -5,33 +5,6 @@ const totalDiscount = document.querySelector('.total-discount');
 const goodCount = document.querySelectorAll('.number-input');
 
 
-// Вспомогательная функция приведения к числу 
-function toNum(str) {
-    const num = parseInt(str.replaceAll(' ', ''));
-    return num;
-  }
-// Вспомогательная функция приведения к строке
-function toCurrency(num) {
-    const format = num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
-    return format;
-  }
-
-
-//Блок функций считающих общую сумму в корзине
-const allGoodPriceEl = document.querySelectorAll('.item-price__inbasket');
-let allprice = 2101063;
-
-const plusTotalPrice = (currentPrice) => {
-	allprice += parseInt(currentPrice);
-	return allprice;
-}
-const minusTotalPrice = (currentPrice) => {	
-    return allprice -= currentPrice;
-}
-const printTotalPrice = () => {
-	totalPrice.textContent = `${toCurrency(price)}`;
-}
-
 //Пишем функцию обработчик по клику в каждом товаре
 function addHandlers(count) {
     let itemPriceBlock = count.querySelector('.item-price');
@@ -40,9 +13,7 @@ function addHandlers(count) {
     let countGoods = count.querySelector('.number-input');
     let goodPriceEl = count.querySelector('.item-price__inbasket');
     let oldPrice = count.querySelector('.price-before__count');
-	let countLeft = count.querySelector('.left');
-
-	
+	let countLeft = count.querySelector('.left');	
 
 		//Выносим функцию изменения количества товара и цены чтобы не повторяться в условиях
 	const changeCount = () => {
